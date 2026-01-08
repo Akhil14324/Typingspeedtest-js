@@ -1,12 +1,5 @@
 # Typing Speed Test-JS
-![GitHub all releases](https://img.shields.io/github/downloads/GaganpreetKaurKalsi/TypingSpeedTest-JS/total)
-![GitHub language count](https://img.shields.io/github/languages/count/GaganpreetKaurKalsi/TypingSpeedTest-JS) 
-![GitHub top language](https://img.shields.io/github/languages/top/GaganpreetKaurKalsi/TypingSpeedTest-JS?color=yellow) 
-![Bitbucket open issues](https://img.shields.io/bitbucket/issues/GaganpreetKaurKalsi/TypingSpeedTest-JS)
-![GitHub forks](https://img.shields.io/github/forks/GaganpreetKaurKalsi/TypingSpeedTest-JS?style=social)
-![GitHub Repo stars](https://img.shields.io/github/stars/GaganpreetKaurKalsi/TypingSpeedTest-JS?style=social)
 
-![Github thumbnail](https://user-images.githubusercontent.com/54144759/122932054-0a339680-d38b-11eb-8123-dc8703770109.JPG)
 
 <p align = "center"><b>An app made in HTML, CSS and JavaScript to test typing speed</b></p>
 <br>
@@ -49,22 +42,7 @@ After you are done, the result is calculated and displayed. It includes WPM(word
 <br>
 
 
-## ➡️ Live Link
-### https://typingspeedtest-js.netlify.app/
 
-<br>
-
-## ➡️ Link to Portfolio 
-### https://gaganpreetkaurkalsi.netlify.app/
-
-<br>
-
-## ➡️ Demo Video
-Here is a 1min video of the working app
-
-https://user-images.githubusercontent.com/54144759/122967691-5c36e500-d3a8-11eb-9c8f-b22933a327ec.mp4
-
-<br>
 
 ## ➡️ Difficulties
 ### ""Not able to detect keyup event for space in android""
