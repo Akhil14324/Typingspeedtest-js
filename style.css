@@ -34,16 +34,6 @@ body {
   font-weight: bolder;
   letter-spacing: 1px;
 }
-.nav-container .portfolio-link a {
-  font-weight: 500;
-  letter-spacing: 1px;
-  background-color: #dc2626;
-  color: white;
-  font-size: 18px;
-  padding: 8px 12px;
-  border-radius: 10px;
-  cursor: pointer;
-}
 .wrapper {
   text-align: center;
   padding: 60px 30px;
@@ -196,7 +186,7 @@ select:focus {
   background-color: #1b1b20;
   padding: 50px 10px 80px 10px;
   position: relative;
-  background-image: url(/images/stars.png), url(/images/stars.png);
+  /* background-image: url(/images/stars.png), url(/images/stars.png); */
   background-size: 572px auto;
   background-position: calc(50% - 750px), calc(50% + 750px);
   background-repeat: repeat-y;
@@ -822,8 +812,8 @@ footer {
     font-size: 30px;
   }
   .sample-container {
-    background-image: url(/images/stars.png), url(/images/stars.png);
-    background-size: 572px auto;
-    background-position:0%;
+    /* background-image: url(/images/stars.png), url(/images/stars.png); */
+  /* background-size: 572px auto; */
+  /* background-position:0%; */
   }
 }

@@ -208,8 +208,8 @@ function checkUserInput() {
 
   if (document.querySelector(".type-area").value == "") {
     document.querySelector(".para-type").innerText = infinityPara;
-  } else if (startword.includes(userInput)) {
-    text = modifiedpara;
+  } else if (startword.startsWith(userInput)) {
+    var text = modifiedpara;
     text = text.replace(
       userInput,
       '<span class="highlight">' + userInput + "</span>"
@@ -226,7 +226,7 @@ var minusString = ""; // String to be minused from the total typed by the user i
 
 // Invoked when user presses space btn. It checks if the currently typed word matches the current first word from the para. If does then it deletes the first word from the paragraph. If the word is wrong then it dumps it in the WORD BIN.
 function handleSpace() {
-  userType = document.querySelector(".type-area").value; // data typed by user
+  var userType = document.querySelector(".type-area").value; // data typed by user
   var deleteData = userType.replace(minusString, ""); // getting currently typed word
   let startword = modifiedpara.substr(0, modifiedpara.indexOf(" ") + 1); // Getting the starting word from the paragraph
 
@@ -301,25 +301,25 @@ function calculateWPM(data, totalMin) {
   if (charcount === undefined) {
     return data / 5 / totalMin;
   }
-  return (wpm = charcount / 5 / totalMin);
+  return charcount / 5 / totalMin;
 }
 
 // Calculate CPM when data is passed either in string or length form
 function calculateCPM(data, totalMin) {
   var charcount = data.length;
   if (charcount == undefined) {
-    return (wpm = data / totalMin);
+    return data / totalMin;
   }
-  return (wpm = charcount / totalMin);
+  return charcount / totalMin;
 }
 
 //Calculate Accuracy when data is passed either in string or length form
 function calculateAccuracy(correctChars, totalChars) {
-  correctChar = correctChars.length;
+  var correctChar = correctChars.length;
   if (correctChar == undefined) {
     correctChar = correctChars;
   }
-  totalChar = totalChars.length;
+  var totalChar = totalChars.length;
   if (totalChar == undefined) {
     totalChar = totalChars;
   }
@@ -472,7 +472,7 @@ async function checkUserInputInfinity() {
   } else if (para == userInput) {
     // Typing completed
     document.querySelector(".infinity-type-area").style.borderColor = "#16A34A";
-    text = samples[random];
+    var text = samples[random];
     clearInterval(clocking);
     text = text.replace(
       userInput,
@@ -491,9 +491,9 @@ async function checkUserInputInfinity() {
     });
     document.querySelector("#infinity-mode").scrollIntoView();
     result();
-  } else if (para.includes(userInput)) {
+  } else if (para.startsWith(userInput)) {
     document.querySelector(".infinity-type-area").style.borderColor = "#F97316";
-    text = samples[random];
+    var text = samples[random];
     text = text.replace(
       userInput,
       '<span class="highlight">' + userInput + "</span>"
