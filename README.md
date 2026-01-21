@@ -48,10 +48,6 @@ After you are done, the result is calculated and displayed. It includes WPM(word
 ### ""Not able to detect keyup event for space in android""
 Event Listeners like keyup, keydown and keypress doesn't work on android. In my project I had to detect space and backspace which broke when I opened the app in my android. The code worked fine on desktop browser. For making it work on android I had to change a lot of my code, had to rely on input event for space detection. It was easy to work with keyup and keydown. Changing to input event took a lot of efforts.
 
-**Link to stackoverflow discussion on the same issue :-**  <br>
--> https://stackoverflow.com/questions/50215712/javascript-block-backspace-on-text-input-on-android <br>
--> https://stackoverflow.com/questions/30743490/capture-keys-typed-on-android-virtual-keyboard-using-javascript
 
-<br>
 
 <h3 align="center">THANK YOU!</h3>
