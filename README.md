@@ -20,7 +20,6 @@ After you are done, the result is calculated and displayed. It includes WPM(word
 - CSS 
 - Vanilla JS
 - VScode
-- Netlify (for hosting)
 
 <br>
 
